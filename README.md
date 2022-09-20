@@ -1,5 +1,5 @@
 ## Bark 的通知工具 🎉🎉🎉
-<img src="https://camo.githubusercontent.com/8415d8c1f8c5e1a34cdc8e41c56ecf7c66371433d2d9aa9b4c792108a60e0b8a/68747470733a2f2f7778332e73696e61696d672e636e2f6d773639302f303036306c6d37546c793167306e666e6a6a7862626a333073673073673735372e6a7067">  
+<img src="https://wx3.sinaimg.cn/mw690/0060lm7Tly1g0nfnjjxbbj30sg0sg757.jpg" width=200px height=200px />  
 
 ### 🍺用法：👇
 #### SendMessage
