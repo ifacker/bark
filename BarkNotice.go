@@ -49,7 +49,7 @@ func (b *Bark) andandand() string {
 	case b.IsArchive == Is_Archive_OFF:
 		result += fmt.Sprintf("isArchive=%d&", Is_Archive_OFF)
 	case b.Icon != "":
-		result += fmt.Sprintf("icon=%d&", b.Icon)
+		result += fmt.Sprintf("icon=%s&", b.Icon)
 	case b.GroupName != "":
 		result += fmt.Sprintf("group=%s&", b.GroupName)
 	case b.Level != "":
