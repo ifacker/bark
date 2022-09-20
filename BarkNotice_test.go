@@ -7,7 +7,7 @@ import (
 
 func TestBark_SendMessage(t *testing.T) {
 	bark := Bark{
-		Url:       "https://api.day.app/xxxxxxxx",
+		Url:       "https://api.day.app/xxxxxxx",
 		Title:     "title",
 		Body:      "body",
 		Sound:     Sound_Alarm,

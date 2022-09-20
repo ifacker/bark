@@ -41,26 +41,34 @@ func (b *Bark) SendMessage() (string, error) {
 // 对读取对参数进行自动识别组装
 func (b *Bark) andandand() string {
 	result := ""
-	switch {
-	case b.Sound != "":
+	if b.Sound != "" {
 		result += fmt.Sprintf("sound=%s&", b.Sound)
-	case b.IsArchive == Is_Archive_ON:
+	}
+	if b.IsArchive == Is_Archive_ON {
 		result += fmt.Sprintf("isArchive=%d&", Is_Archive_ON)
-	case b.IsArchive == Is_Archive_OFF:
+	}
+	if b.IsArchive == Is_Archive_OFF {
 		result += fmt.Sprintf("isArchive=%d&", Is_Archive_OFF)
-	case b.Icon != "":
+	}
+	if b.Icon != "" {
 		result += fmt.Sprintf("icon=%s&", b.Icon)
-	case b.GroupName != "":
+	}
+	if b.GroupName != "" {
 		result += fmt.Sprintf("group=%s&", b.GroupName)
-	case b.Level != "":
+	}
+	if b.Level != "" {
 		result += fmt.Sprintf("level=%s&", b.Level)
-	case b.Jump2Url != "":
+	}
+	if b.Jump2Url != "" {
 		result += fmt.Sprintf("url=%s&", b.Jump2Url)
-	case b.Copy != "":
+	}
+	if b.Copy != "" {
 		result += fmt.Sprintf("copy=%s&", b.Copy)
-	case b.Badge != 0:
+	}
+	if b.Badge != 0 {
 		result += fmt.Sprintf("icon=%d&", b.Badge)
-	case b.AutoCopy == AutoCopy_ON && b.Copy != "":
+	}
+	if b.AutoCopy == AutoCopy_ON && b.Copy != "" {
 		result += fmt.Sprintf("autoCopy=%d&", AutoCopy_ON)
 	}
 	return result[:len(result)-1]
