@@ -5,18 +5,18 @@
 #### SendMessage
 ```go
 	bark := Bark{
-		Url:       "https://api.day.app/xxxxxxxx",
-		Title:     "title",
-		Body:      "body",
-		Sound:     Sound_Alarm,
-		IsArchive: Is_Archive_ON,
-		Icon:      "https://s1.ax1x.com/2022/09/16/vzIC9K.png",
-		GroupName: "test",
-		Level:     Level_Active,
-		Jump2Url:  "https://www.baidu.com",
-		Copy:      "copyText",
-		Badge:     1,
-		AutoCopy:  AutoCopy_OFF,
+		Url:       "https://api.day.app/xxxxxxxx", // 请求的URL，包括Key (必需要有）
+		Title:     "title", // 通知标题 (必需要有）
+		Body:      "body", // 通知内容
+		Sound:     Sound_Alarm, // 推送铃声
+		IsArchive: Is_Archive_ON, // 是否保存通知消息
+		Icon:      "https://s1.ax1x.com/2022/09/16/vzIC9K.png", // 通知图标
+		GroupName: "test", // 接受消息分组的组名
+		Level:     Level_Active, // 时效性通知
+		Jump2Url:  "https://www.baidu.com", // 通知 Url 跳转 如：https://www.baidu.com 
+		Copy:      "copyText", // 只复制 copy 参数到值
+		Badge:     1, // 设置角标
+		AutoCopy:  AutoCopy_OFF, // 自动复制 需要与 Copy 组合使用
 	}
 	a, err := bark.SendMessage()  // 配置好 bark 之后直接发送消息即可
 	fmt.Println(a, err)
